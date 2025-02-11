@@ -13,9 +13,7 @@ Screenshot of the running application
 Open the browser to the app’s location showed the various pages.
 
 Screenshot of the home page Screenshot of results from pinging reddit
-
-
-Screenshot of the history page for google Screenshot of leaving a comment on the comments page
+![image](https://github.com/user-attachments/assets/6e9a6c61-2de7-48b3-9af1-830b093ad4f0)
 
 ## Find and exploit the vulnerabilities
 
@@ -85,12 +83,7 @@ console.error(err)
 
 }
 
-Code snippet of vulnerable code
 
-
-Screenshot of exploiting the vulnerability Screenshot of console log showing malicious SQL running
-
-Screenshot of the home page in a broken state
 
 
 Mitigation/Remediation
@@ -258,9 +251,6 @@ Steps to reproduce:
 
 
 Proof Of Concept:
-
-Screenshot of the comments page Comments page after the SQL injection has been executed
-
 Mitigations/Remediation
 
 1. Use parameterized values in the SQL commands rather than pulling in directly from the
@@ -279,9 +269,6 @@ timestamp DESC
 LIMIT 100
 `, [_.hostname])
 ```
-Screenshot of malicious SQL in the hostname
-
-
 ##### SQL Injection Instance #
 
 Vulnerability Name: Hostname Parameter on “Ping” Endpoint - "POST /ping" is vulnerable to
@@ -333,8 +320,6 @@ been dropped or altered, demonstrating the SQL injection attack.
 
 
 Proof of Concept (PoC):
-
-Screenshot of the application erroring out on the command step when using malicious SQL
 
 Mitigations/Remediation
 
@@ -526,7 +511,8 @@ values tested against are the output of a command. And lastly, the pattern is no
 complex enough to cause an issue. A free regex DOS checker shows this.
 
 
-Screenshot showing the regex is safe
+![image](https://github.com/user-attachments/assets/46681dc6-db4a-4429-889c-7de7ff95616c)
+
 
 References:
 
